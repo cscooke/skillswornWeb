@@ -2,17 +2,19 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import Style from "../styles/global.class"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `black`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 1440,
         padding: `1.45rem 1.0875rem`,
       }}
     >

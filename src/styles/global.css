@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Cirka';
+    src: url('../fonts/CirkaBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/PangramRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+header {
+  background:url('/img/spash-image_dark.jpg');
+}
+
+body{
+  background-color: #121212;
+  color: #efefef;
+}
