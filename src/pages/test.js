@@ -25,6 +25,16 @@ const IndexPage = () => (
               <a href="https://store.steampowered.com/app/1565240/Skillsworn/" class="font-body items-center text-center transition duration-300 ease-in-out p-4 m-2 text-l w-2/5 bg-white hover:bg-gray-200 text-black">View on Steam</a>
               <a href="#" class="font-body text-center items-center transition duration-300 ease-in-out p-4 m-2 text-l w-2/5 bg-white hover:bg-gray-200 text-black">Watch Trailer</a>
           </div>
+          <p class="text-white flex flex-col items-center font-body">
+            <span>Available on<br /></span>
+          </p>
+          <div class="flex flex-row items-center justify-center">
+            <div class="grid grid-cols-3 divide-x divide-white divide-opacity-20">
+              <div class="p-5">winIcon</div>
+              <div class="p-5">linuxIcon</div>
+              <div class="p-5">macIcon</div>
+            </div>
+          </div>
         </div>
     </div>
 
