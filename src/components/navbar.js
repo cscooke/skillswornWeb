@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import Style from "../styles/global.css"
+import "../styles/global.css"
 import logo from "../img/skillsworn-logo.svg"
 
 const Navbar = ({ siteTitle }) => (

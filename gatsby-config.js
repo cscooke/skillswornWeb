@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Skillsworn`,
+    description: `Skillsworn is a real time, party-based isometric adventure game. Take on the role of a fresh adventurer and embark on a journey through the wilds of the world. Defeat a variety of dangerous foes and prove that you are not just another bored peasant seeking a thrill.`,
+    author: `@cs_cooke`,
+    siteUrl: `https://skillsworn.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

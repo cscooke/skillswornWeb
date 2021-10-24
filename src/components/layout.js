@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 
 import Navbar from "./navbar"
-import Style from "../styles/global.css"
+import "../styles/global.css"
 import cfLogo from "../img/cfLogo.svg"
 
 const Layout = ({ children }) => {
