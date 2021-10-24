@@ -9,8 +9,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+
 import Navbar from "./navbar"
 import Style from "../styles/global.css"
+import cfLogo from "../img/cfLogo.svg"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,14 +35,19 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
+        <footer class="space-y-4 font-body text-xs bg-black h-60 p-8 flex flex-col justify-center items-center uppercase tracking-widest"
           style={{
-            marginTop: `2rem`,
+            color: `#3d3d3d`,
           }}
         >
-          © {new Date().getFullYear()},
-          {` `}
-          <a href="">Confer Studios</a>
+          <div>
+            <a href="#"><img class="h-5 mx-auto opacity-20 hover:opacity-30" src={ cfLogo } /></a>
+          </div>
+          <div>
+            © {new Date().getFullYear()},
+            {` `}
+            Confer Studios
+          </div>
         </footer>
       </div>
     </>
