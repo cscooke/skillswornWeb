@@ -35,13 +35,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer class="space-y-4 font-body text-xs bg-black h-60 p-8 flex flex-col justify-center items-center uppercase tracking-widest"
+        <footer className="space-y-4 font-body text-xs bg-black h-60 p-8 flex flex-col justify-center items-center uppercase tracking-widest"
           style={{
             color: `#3d3d3d`,
           }}
         >
           <div>
-            <a href="#"><img class="h-5 mx-auto opacity-20 hover:opacity-30" src={ cfLogo } /></a>
+            <a href="#"><img className="h-5 mx-auto opacity-20 hover:opacity-30" src={ cfLogo } /></a>
           </div>
           <div>
             © {new Date().getFullYear()},
