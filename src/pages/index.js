@@ -7,7 +7,7 @@ import logo from "../img/skillsworn-logo.svg"
 
 const Index = () => (
     <Layout>
-    <Seo title="Home" />
+    <Seo title="Skillsworn" />
       <div className="bg-splash-image bg-no-repeat bg-center bg-cover h-screen flex justify-center items-center">
           <div className="space-y-4">
             <p className="text-white sm:text-5xl flex flex-col items-center font-display text-4xl">

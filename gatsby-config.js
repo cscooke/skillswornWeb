@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Skillsworn`,
-    description: `Skillsworn is a real time, party-based isometric adventure game. Take on the role of a fresh adventurer and embark on a journey through the wilds of the world. Defeat a variety of dangerous foes and prove that you are not just another bored peasant seeking a thrill.`,
+    description: `Skillsworn is a single-player, party-based, adventure game. Recruit companions, face powerful foes and explore the wilds of Thera.`,
     author: `@cs_cooke`,
     siteUrl: `https://skillsworn.com`,
+    image: `/seo-skillsworn.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

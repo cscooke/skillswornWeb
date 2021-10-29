@@ -5,7 +5,7 @@ import logo from "../img/skillsworn-logo.svg"
 const Navbar = ({ siteTitle }) => (
     <nav className="sticky top-0 flex bg-black bg-opacity-70 border-b border-white border-opacity-20 p-6 justify-center sm:justify-start">
       <div className="flex text-white">
-        <img className="h-5 mx-auto" src={ logo } />
+        <img className="h-5 mx-auto" src={ logo } alt="Skillsworn logo" />
       </div>
       <div className="hidden">
         <div className="block lg:hidden">

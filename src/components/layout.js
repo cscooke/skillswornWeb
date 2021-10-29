@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           }}
         >
           <div>
-            <a href="#"><img className="h-5 mx-auto opacity-20 hover:opacity-30" src={ cfLogo } /></a>
+            <img className="h-5 mx-auto opacity-20 hover:opacity-30" src={ cfLogo } alt="Confer Studios logo" />
           </div>
           <div>
             © {new Date().getFullYear()},
