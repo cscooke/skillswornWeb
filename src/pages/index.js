@@ -1,22 +1,18 @@
 import * as React from "react"
-import { graphql } from "gatsby"
-
+import Seo from "../components/seo"
 
 import "../styles/global.css"
 import Layout from "../components/layout"
 import logo from "../img/skillsworn-logo.svg"
 
-
-
-export default function Home({ data }) {
-  console.log(data)
-  return (
+const Index = () => (
     <Layout>
+    <Seo title="Home" />
       <div className="bg-splash-image bg-no-repeat bg-center bg-cover h-screen flex justify-center items-center">
           <div className="space-y-4">
             <p className="text-white sm:text-5xl flex flex-col items-center font-display text-4xl">
               <span className="text-sm uppercase tracking-widest underline">A Realtime Adventure Game<br /></span>
-              <img className="mb-8" src={ logo } />
+              <img className="mb-8" src={ logo } alt="Skillsworn logo" />
               <span>Discover the wilds of Thera<br /></span>
               <span>and all its inhabitants.</span>
             </p>
@@ -30,17 +26,5 @@ export default function Home({ data }) {
       </div>
     </Layout>
   )
-}
 
-export const query = graphql`
-  query SiteInfo {
-    site {
-      siteMetadata {
-        author
-        description
-        siteUrl
-        title
-      }
-    }
-  }
-`
+export default Index
