@@ -92,7 +92,7 @@ Seo.defaultProps = {
   meta: [],
   description: ``,
   title: ``,
-  image: ``,
+  image: null,
 }
 
 Seo.propTypes = {
