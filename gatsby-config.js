@@ -3,8 +3,8 @@ module.exports = {
     title: `Skillsworn`,
     description: `Skillsworn is a single-player, party-based, adventure game. Recruit companions, face powerful foes and explore the wilds of Thera.`,
     author: `Confer Studios`,
-    siteUrl: `https://skillsworn.netlify.app`,
-    image: `/seo-skillsworn.jpg`,
+    siteUrl: `localhost:8000`,
+    image: `/src/img/seo-skillsworn.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

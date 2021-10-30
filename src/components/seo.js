@@ -9,8 +9,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import metaImage from '../img/seo-skillsworn.jpg';
 
-function Seo({ description, lang, meta, title, image: metaImage }) {
+function Seo({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -29,7 +30,7 @@ function Seo({ description, lang, meta, title, image: metaImage }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const image = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
+  const siteImage = image || metaImage
 
   return (
     <Helmet
@@ -45,11 +46,11 @@ function Seo({ description, lang, meta, title, image: metaImage }) {
         },
         {
           name: `image`,
-          content: image,
+          content: siteImage,
         },
         {
           name: `og:image`,
-          content: image,
+          content: siteImage,
         },
         {
           property: `og:title`,
@@ -65,7 +66,7 @@ function Seo({ description, lang, meta, title, image: metaImage }) {
         },
         {
           name: `twitter:image`,
-          content: image,
+          content: siteImage,
         },
         {
           name: `twitter:card`,
@@ -93,7 +94,7 @@ Seo.defaultProps = {
   meta: [],
   description: ``,
   title: ``,
-  image: ``,
+  image: null,
 }
 
 Seo.propTypes = {
