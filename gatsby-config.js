@@ -4,7 +4,7 @@ module.exports = {
     description: `Skillsworn is a single-player, party-based, adventure game. Recruit companions, face powerful foes and explore the wilds of Thera.`,
     author: `@cs_cooke`,
     siteUrl: `https://skillsworn.com`,
-    image: `/seo-skillsworn.jpg`,
+    image: `/src/img/seo-skillsworn.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,7 +29,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/img/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/img/skillsworn-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,
