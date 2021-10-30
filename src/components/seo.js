@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title, image }) {
+function Seo({ description, lang, meta, title, image: metaImage }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,7 @@ function Seo({ description, lang, meta, title, image }) {
             title
             description
             author
+            siteUrl
             image
           }
         }
@@ -28,7 +29,7 @@ function Seo({ description, lang, meta, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const metaImage = image || site.siteMetadata?.image
+  const image = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
 
   return (
     <Helmet
@@ -44,11 +45,11 @@ function Seo({ description, lang, meta, title, image }) {
         },
         {
           name: `image`,
-          content: metaImage,
+          content: image,
         },
         {
           name: `og:image`,
-          content: metaImage,
+          content: image,
         },
         {
           property: `og:title`,
@@ -64,7 +65,7 @@ function Seo({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: metaImage,
+          content: image,
         },
         {
           name: `twitter:card`,
@@ -72,7 +73,7 @@ function Seo({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: site.siteMetadata?.author || `@cs_cooke`,
         },
         {
           name: `twitter:title`,
@@ -92,7 +93,7 @@ Seo.defaultProps = {
   meta: [],
   description: ``,
   title: ``,
-  image: null,
+  image: ``,
 }
 
 Seo.propTypes = {
