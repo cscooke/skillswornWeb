@@ -4,7 +4,7 @@ module.exports = {
     description: `Skillsworn is a single-player, party-based, adventure game. Recruit companions, face powerful foes and explore the wilds of Thera.`,
     author: `@cs_cooke`,
     siteUrl: `https://skillsworn.com`,
-    image: `/static/seo-skillsworn.jpg`,
+    image: `/seo-skillsworn.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
