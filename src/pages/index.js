@@ -16,7 +16,7 @@ const Index = () => (
               <span>Discover the wilds of Thera<br /></span>
               <span>and all its inhabitants.</span>
             </p>
-            <p className="text-white text-xl flex flex-col items-center font-light font-body">Available for early access January 2022</p>
+            <p className="text-white text-xl flex flex-col items-center font-light font-body">Available for early access 2022</p>
 
             <div className="flex flex-row items-center justify-center">
                 <a href="https://store.steampowered.com/app/1565240/Skillsworn/" className="font-body items-center text-center transition duration-300 ease-in-out p-4 m-2 text-l w-1/2 bg-white hover:bg-gray-200 text-black">View on Steam</a>
