@@ -11,7 +11,7 @@ const Index = () => (
       <div className="bg-splash-image bg-no-repeat bg-center bg-cover h-screen flex justify-center items-center">
           <div className="space-y-4">
             <p className="text-white sm:text-5xl flex flex-col items-center font-display text-4xl">
-              <span className="text-sm uppercase tracking-widest underline">A Realtime Adventure Game<br /></span>
+              <span className="text-sm uppercase tracking-widest underline">A Turn-Based Adventure Game<br /></span>
               <img className="mb-8" src={ logo } alt="Skillsworn logo" />
               <span>Discover the wilds of Thera<br /></span>
               <span>and all its inhabitants.</span>
